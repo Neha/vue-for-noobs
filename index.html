@@ -1,0 +1,106 @@
+<!Doctype html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            color: #000;
+        }
+
+        #app{
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .productCard{
+            border:2px solid #eee;
+            box-shadow: 2px 2px 3px #999;
+            padding: 10px;
+            max-width: 200px;
+            text-align: center;
+        }
+
+        img{
+            max-width: 100%;
+        }
+        .buttonWrapper{
+            border-radius: 23px;
+    border: 1px solid #000;
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+            
+        }
+        .buttonWrapper > button{
+            border: 0;
+            padding: 0;
+            margin: 0;
+            flex-basis: 80px;
+            font-weight: 800;
+            font-size:20px;
+        }
+        .buttonWrapper > span{
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            flex-basis: 200px;
+        }
+        .error{
+            color: red;
+            font-size: 11px;
+            font-style: italic;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        
+    </div>
+
+</body>
+<script>
+new Vue({
+    el : "#app",
+    data : {
+        flag : false,
+        errorMessage : "You can't have negative icecream sweetie :)",
+        quantity : {
+            number : 0
+        }
+    },
+    methods:{
+        inc(){
+                 this.flag = false;
+                this.quantity.number++;
+            },
+        dec() {
+                if(this.quantity.number > 0) {
+                   
+                    this.quantity.number--;
+                }else{
+                    this.flag = true;
+                }
+                
+           
+        }
+    },
+    template : `
+    <div class="productCard"> 
+    <img src="sample.png" />
+    <h4>Strawberry Icecream</h4>
+    <span class="error">{{ flag ? this.errorMessage : ''}}</span>
+    <div class="buttonWrapper">
+            <button @click="dec">-</button>
+                <span>{{quantity.number}}</span>
+                <button @click="inc">+</button>
+                </div>
+    </div>`
+})
+</script>
+</html>
