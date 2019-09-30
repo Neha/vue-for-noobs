@@ -1,0 +1,48 @@
+<!Doctype html>
+<head>
+<title>Test</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
+</head>
+<body>
+ <div id="app">
+  <product-card product-name="neha" @desc-num="descNum"></product-card>
+  <product-card product-name="neha" @inc-num="inccNum"></product-card>
+</div>
+ <script>
+  Vue.component('product-card',{
+      template: '<div><h2 @click="clickBtn">{{productName}}</h2></div>',
+      props: [ 'productName'],
+      computed: {
+          getStyle(){
+              return { color: this.color } 
+          }
+      },
+      methods:{
+        clickBtn(event){
+            this.$emit('desc-num');
+            this.$emit('inc-num');
+        }
+      }
+    });
+
+  new Vue({
+      el: '#app',
+      data: {
+          message : "hello"
+      },
+      methods:{
+        descNum (e) {
+            console.log('event dec');
+            this.$emit('event')
+           
+        },
+        inccNum (e) {
+            console.log('event inc');
+            this.$emit('event')
+           
+        }
+      }
+  });
+ </script>
+</body>
+</html>
