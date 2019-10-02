@@ -1,0 +1,48 @@
+<!Doctype html>
+<head>
+<title>VueJS Counter</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+ <div id="app">
+  <h3>{{ total }}</h3>
+  <product-card label="decrease" @decrease="decreaseCounter"></product-card>
+  <product-card label="increase" @increase="increaseCounter"></product-card>
+  
+</div>
+ <script>
+  Vue.component('product-card',{
+      template: '<div><button @click="productBtn" v-bind:name="label">{{label}}</button></div>',
+      props: [ 'label'],
+      methods:{
+        productBtn(e){
+            if(this.label === 'increase'){
+               this.$emit('increase'); // What if I don't use $emit & directly call incBtn? Is there a way to do this?
+            }
+            else{
+               this.$emit('decrease');
+            }
+         }
+      }
+    });
+
+  new Vue({
+      el: '#app',
+      data: {
+        total : 0
+      },
+      methods:{
+        increaseCounter () {
+           this.total += 1;
+        },
+        decreaseCounter () {
+         
+          if(this.total != 0) {
+            this.total -= 1;
+          }
+        }
+    }
+  });
+ </script>
+</body>
+</html>
