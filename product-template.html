@@ -1,0 +1,37 @@
+<!Doctype html>
+<head>
+<title>VueJS Product Template</title>
+<script src="vue.js"></script>
+</head>
+<body>
+ <div id="app">
+  <product-card :products="products"></product-card>
+</div>
+ <script>
+  Vue.component('product-card',{
+      template: '<div><div v-for="(product,index) in (products)"><h2>{{product.name}}</h2><h4>{{product.quantity}}</h4><h4>{{product.price}}</h4><div @click="increment" v-bind:value="product.quantity"  v-bind:index="index">+</div><button @click="decrement" v-bind:value="product.quantity" v-bind:index="index">-</button></div></div>',
+      props: [ 'products'],
+      methods:{
+          increment(e){
+              console.log(e.target.index);
+            let elm = e.target.index;
+            e.target.value++;
+            this.products[0].quantity =  e.target.value;
+            },
+          decrement(e){
+            let elm = e.target.index;
+              e.target.value--;
+              this.products[elm].quantity =  e.target.value;
+          }
+      }
+});
+
+new Vue({
+      el: '#app',
+      data: {
+        products : [{ name : 'icecream', quantity : 10, price : 200 },{ name : 'cake', quantity : 100, price : 550 },{ name : 'shakes', quantity : 410, price : 390 }]
+      }
+  });
+ </script>
+</body>
+</html>
