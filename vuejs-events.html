@@ -19,8 +19,13 @@
       },
       methods:{
         clickBtn(event){
-            this.$emit('desc-num');
-            this.$emit('inc-num');
+         Object.keys(this.$listeners)
+           .filter(
+             // event name should have a hyphen to prevent collision with navtive events.
+             eventName => eventName.includes('-') 
+           ).forEach(
+             eventName => this.$emit(eventName)
+           )
         }
       }
     });
