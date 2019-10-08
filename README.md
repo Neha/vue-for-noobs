@@ -6,8 +6,8 @@ I believe in learning by doing. I think or get the ideas of a module, or a task 
 develop that in VueJS.
 
 - I am following the book: [Vue.js: Up and Running ](https://www.flipkart.com/vue-js-up-running/)
-- I am following random VueJS online videos 
 - I am also following [Master Frontend's Sarah course](https://frontendmasters.com/courses/vue/)
+- I am following random VueJS online videos 
 
 As well as, I take help of community to review my code, approaches. Hence, big shout out to them.
 
