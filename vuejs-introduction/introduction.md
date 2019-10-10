@@ -24,3 +24,17 @@ VueJS is the JavaScript framework. It help the developers to create the web appl
 You can use VueJS by using :
 - CDN Link
 - VueJS CLI
+
+## Vue Instance
+
+    new Vue({ ... })
+
+    new Vue({ 
+    el: '#id',
+    data: {
+        ...
+    },
+    methods: {
+        ...
+    }
+ })
