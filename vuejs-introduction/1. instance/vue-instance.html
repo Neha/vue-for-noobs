@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+    <script src="../resources/vue.js"></script>
+  </head>
+<body>
+ <section class="wrapper">
+  <h1>VueJS Demo</h1>
+
+  <section class="container">
+    <p>The below text is coming from the Vue instance's data.<br/>in the 
+      <code>{{ message }}</code>.
+    </p>
+    <h2 class="output"  id="content"> <pre> {{ message }}</pre></h2>
+  </section>
+ </section>
+ <script>
+  new Vue({
+      el: "#content",
+      data: {
+          message : "Hello!! Vuejs"
+      }
+  })
+ </script>
+</body>
+</html>
