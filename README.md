@@ -8,6 +8,7 @@ develop that in VueJS.
 - I am following the book: [Vue.js: Up and Running ](https://www.flipkart.com/vue-js-up-running/)
 - I am also following [Master Frontend's Sarah course](https://frontendmasters.com/courses/vue/)
 - I am following random VueJS online videos 
+- How to compare the frameworks by Evan You - [Video](https://www.youtube.com/watch?v=ANtSWq-zI0s)
 
 As well as, I take help of community to review my code, approaches. Hence, big shout out to them.
 
