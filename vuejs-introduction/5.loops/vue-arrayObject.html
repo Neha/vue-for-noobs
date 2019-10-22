@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+    <script src="../resources/vue.js"></script>
+  </head>
+<body>
+ <section class="wrapper">
+  <h1>VueJS Demo - Loops</h1>
+
+  <section class="container">
+    <p>You can loop on array, array-object, object
+    </p>
+    <div  id="content">
+        <ul>
+            <li v-for="flavour  in flavours">I liked {{ flavour.name }} & the price is {{ flavour.price }}</li>
+        </ul>
+    </div>
+    
+  </section>
+ </section>
+ <script>
+  new Vue({
+      el: "#content",
+      data: {
+        flavours: [
+            {name: 'vanilla' , price: 200},
+            {name: 'rose' , price: 300},
+            {name: 'pineapple' , price: 150},]
+
+        }
+  })
+ </script>
+</body>
+</html>
