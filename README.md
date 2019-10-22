@@ -19,4 +19,4 @@ As well as, I take help of community to review my code, approaches. Hence, big s
 
 # Who I am?
 Hello, my name is Neha Sharma. A curious learner and developer from India.
-You can reach me on [Twitter](https://twitter.com/hellonehha) , check my [Linkedin](https://www.linkedin.com/in/nehha/).
+You can reach me on [Twitter](https://twitter.com/hellonehha) , or check my [Linkedin](https://www.linkedin.com/in/nehha/).
