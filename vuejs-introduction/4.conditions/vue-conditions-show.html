@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+    <script src="../resources/vue.js"></script>
+  </head>
+<body>
+ <section class="wrapper">
+  <h1>VueJS Demo - v-show</h1>
+
+  <section class="container">
+    <p>We have v-if, v-else if, v-show
+    </p>
+    <div  id="content">
+        <p>v-show is simply css display:none. One needs to caution where and when to use v-if and v-show. 
+         v-if is lazy and real condition checking.
+        </p>
+        <h2 v-if="choice=='none'">I don't like icecream :(</h2>
+        <h2 v-show="choice=='paan'">I love icecream and flavour is {{ choice }}</h2>
+        <h2>I am crazy for icecream and flavour is {{ choice }}</h2>
+        <small>Check in the console. "I don't lik.." won't be in DOM but "I love icecream..." <code>display:none</code>.</small>
+    </div>
+    
+  </section>
+ </section>
+ <script>
+  new Vue({
+      el: "#content",
+      data: {
+          message : "Hello!! Vuejs",
+          status: false,
+          choice: "vanilla",
+          flavour: ['vanilla', 'strawberry', 'rose']
+        }
+  })
+ </script>
+</body>
+</html>

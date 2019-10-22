@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+    <script src="../resources/vue.js"></script>
+  </head>
+<body>
+ <section class="wrapper">
+  <h1>VueJS Demo</h1>
+
+  <section class="container">
+    <p>We have v-if, v-else if, v-show
+    </p>
+    <div  id="content">
+        <p>We are using v-if to check the <code>status</code>. If <code>status</code> is <code>true</code> then "I don't..." statment will display otherwise
+            "I love icecream..."
+        </p>
+        <h2 v-if="status">I don't like icecream :(</h2>
+        <h2>I love icecream and flavour is {{ flavour[2]}}</h2>
+        <small>Go to the code and change the <code>status</code> to the <code>true</code></small>
+    </div>
+    
+  </section>
+ </section>
+ <script>
+  new Vue({
+      el: "#content",
+      data: {
+          message : "Hello!! Vuejs",
+          status: false,
+          flavour: ['vanilla', 'strawberry', 'rose']
+        }
+  })
+ </script>
+</body>
+</html>

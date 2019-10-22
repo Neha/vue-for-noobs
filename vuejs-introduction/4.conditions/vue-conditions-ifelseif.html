@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+    <script src="../resources/vue.js"></script>
+  </head>
+<body>
+ <section class="wrapper">
+  <h1>VueJS Demo - v-else if</h1>
+
+  <section class="container">
+    <p>We have v-if, v-else if, v-show
+    </p>
+    <div  id="content">
+        <p>v-else-if: is like if - else-if - else. Where one wants to compare multiple chondition.
+            Here we are going to check the <code>choice</code> and accordingly we will display the 
+            content.
+        </p>
+        <h2 v-if="choice=='none'">I don't like icecream :(</h2>
+        <h2 v-else-if="choice=='paan'">I love icecream and flavour is {{ choice }}</h2>
+        <h2>I love icecream and flavour is {{ choice }}</h2>
+        <small>Go to the code and change the <code>choice</code> to the <code>none or paan</code></small>
+    </div>
+    
+  </section>
+ </section>
+ <script>
+  new Vue({
+      el: "#content",
+      data: {
+          message : "Hello!! Vuejs",
+          status: false,
+          choice: "vanilla",
+          flavour: ['vanilla', 'strawberry', 'rose']
+        }
+  })
+ </script>
+</body>
+</html>
