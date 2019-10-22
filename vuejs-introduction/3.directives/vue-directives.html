@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+    <script src="../resources/vue.js"></script>
+  </head>
+<body>
+ <section class="wrapper">
+  <h1>VueJS Demo</h1>
+
+  <section class="container">
+    <p>There are 3 ways in Vuejs to print the data in the DOM - data, templates and directives.
+    data could be any data-type : string, boolean, array, object, number.</p>
+    <div  id="content">
+        <div>
+            <label>String</label>
+            <span class="output" > <pre> {{ message }}</pre></span>
+        </div>
+
+        <div>
+        <label>boolean</label>
+        <span class="output" > <pre> {{ status }}</pre></span>
+      </div>
+      <div>
+        <label>Array</label>
+        <p class="output" > {{ flavour }}</p>
+</div>
+<div>
+        <label>Array-Object</label>
+        <p class="output" >{{ icecream }}</p>
+      </div>
+    </div>
+    
+  </section>
+ </section>
+ <script>
+  new Vue({
+      el: "#content",
+      data: {
+          message : "Hello!! Vuejs",
+          flavour: ['vanilla', 'choclates' ,'pineapple'],
+          status: true,
+          icecream: [
+            {name: 'snow', price: 190 },
+            {name: 'snow', price: 190 },
+            {name: 'snow', price: 190 },
+          ]
+      }
+  })
+ </script>
+</body>
+</html>

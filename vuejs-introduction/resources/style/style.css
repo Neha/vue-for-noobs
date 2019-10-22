@@ -34,3 +34,12 @@ body{
 .output{
     color: #737373;
 }
+
+#content > div{
+    margin: 20px 0;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 800
+}
