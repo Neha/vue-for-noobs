@@ -19,6 +19,10 @@ As well as, I take help of community to review my code, approaches. Hence, big s
 - VueJS Code Example
    - [Shopping List](https://github.com/Neha/vue-for-noobs/tree/master/shopping-cart)
 
+# Presentation
+
+- [Gurgaon CodeLab](https://drive.google.com/file/d/1Q66ulhgZVVYPn1nXBqVQfOCiWppSkui9/view?usp=sharing)
+
 # Who I am?
 Hello, my name is Neha Sharma. A curious learner and developer from India.
 You can reach me on [Twitter](https://twitter.com/hellonehha) , or check my [Linkedin](https://www.linkedin.com/in/nehha/).
