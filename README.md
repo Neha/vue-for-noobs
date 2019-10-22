@@ -1,4 +1,5 @@
-# vue-for-noobs
+# vue-for-noobs 
+## THIS IS WORK-IN-PROGRESS REPO :)
 Welcome to Learning VueJS. This repo is my journal of learning VueJS. 
 
 # How I am learning?
@@ -14,7 +15,7 @@ As well as, I take help of community to review my code, approaches. Hence, big s
 
 # Agenda
 
-- VueJS Introduction
+- [VueJS Introduction](https://github.com/Neha/vue-for-noobs/tree/master/vuejs-introduction)
 - VueJS Code Example
    - [Shopping List](https://github.com/Neha/vue-for-noobs/tree/master/shopping-cart)
 
