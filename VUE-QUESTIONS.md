@@ -18,3 +18,7 @@ I will start adding the answers slowly.
 |10.| Conditional rendering of the components in the vueJS |
 |11.| How render in Vuejs work? |
 |12.| What are the different type we can bind the arguments in VueJS |
+|13.| Can we use Redux with vuejs? |
+|14.| When to use components and when to use instance?|
+|15.| When to use {{ }} and { } ? |
+|16.| Can we have multiple instance in Vuejs? |
