@@ -54,3 +54,7 @@ small{
     margin-top: 40px;
     display: block;
 }
+
+.redText{
+    color: red;
+}

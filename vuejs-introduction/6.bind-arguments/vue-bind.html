@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../resources/style/style.css"
+    />
+    <script src="../resources/vue.js"></script>
+  </head>
+  <body>
+    <section class="wrapper">
+      <h1>VueJS Demo - bind</h1>
+
+      <section class="container">
+        <p>
+          in VueJS to bind the dynamic data, value, attributes or any methods we
+          use directive v-bind. We can use the short-hand :bind too.
+        </p>
+        <div id="content">
+          <h2 v-bind:class="redText">I am red.</h2>
+          <h2 :class="redText">I am red too.</h2>
+        </div>
+      </section>
+    </section>
+    <script>
+      new Vue({
+        el: '#content',
+        data: {
+          redText: 'redText'
+        }
+      });
+    </script>
+  </body>
+</html>
