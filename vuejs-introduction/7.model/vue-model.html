@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+    <script src="../resources/vue.js"></script>
+</head>
+
+<body>
+    <section class="wrapper">
+        <h1>VueJS Demo - model</h1>
+
+        <section class="container">
+            <p>
+                in VueJS to have 2 way binding we use v-model.
+            </p>
+            <div id="content">
+                <input type="text" v-model="userValue" />
+                <p>{{ userValue }}</p>
+            </div>
+        </section>
+    </section>
+    <script>
+        new Vue({
+            el: '#content',
+            data: {
+                userValue: 'What is your name?'
+            }
+        });
+    </script>
+</body>
+
+</html>
