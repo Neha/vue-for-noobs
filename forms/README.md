@@ -18,4 +18,3 @@ How Forms works in VueJS?
 npm install
 ```
 
-## Here is the [demo](https://twitter.com/hellonehha/status/1181447721359572993)
