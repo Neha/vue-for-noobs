@@ -70,17 +70,7 @@ export default {
 };
 </script>
 <style scoped>
-  .form-wrapper{
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 5px;
-    border:1px solid #000;
-    box-shadow: 5px 5px 2px #000;
-    background: #fff;
-    padding: 10px;
-  }
-
-  label{
+label{
     font-size:16px;
     display: block;
     font-weight: 400;
